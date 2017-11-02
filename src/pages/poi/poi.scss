@@ -3,92 +3,91 @@ html {
 }
 
 page-point-of-interest {
-}
-
-.scroll-content {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 20px;
-}
-
-@media screen and (max-width: 1000px) {
-	.scroll-content {
-		grid-template-columns: 1fr 1fr;
+	@media screen and (max-width: 1000px) {
+		.scroll-content {
+			grid-template-columns: 1fr 1fr !important;
+		}
 	}
-}
 
-ion-card {
-	position: relative;
+	.scroll-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 20px;
+	}
 
-	width: 100% !important;
-	height: 100%;
-	margin: 0 !important;
+	ion-card {
+		position: relative;
 
-	cursor: pointer;
-	text-align: center;
-}
+		width: 100% !important;
+		height: 100%;
+		margin: 0 !important;
 
-.card-title {
-	line-height: 30px;
+		cursor: pointer;
+		text-align: center;
+	}
 
-	position: absolute;
-	bottom: 0;
+	.card-title {
+		line-height: 30px;
 
-	width: 100%;
+		position: absolute;
+		bottom: 0;
 
-	color: #fff;
-	background: #212121;
-}
+		width: 100%;
 
-.card-subtitle {
-	width: 100%;
+		color: #fff;
+		background: #212121;
+	}
 
-	color: #fff;
-}
+	.card-subtitle {
+		width: 100%;
 
-.image {
-	overflow: hidden;
+		color: #fff;
+	}
 
-	min-width: 100%;
-	min-height: 100%;
-}
+	.image {
+		overflow: hidden;
 
-.firstButtonRow {
-	width: 100%;
-	height: 100%;
-}
+		min-width: 100%;
+		min-height: 100%;
+	}
 
-.secondButtonRow {
-	width: 100%;
-	height: 100%;
-}
+	.firstButtonRow {
+		width: 100%;
+		height: 100%;
+	}
 
-.thirdButtonRow {
-	width: 100%;
-	height: 100%;
-}
+	.secondButtonRow {
+		width: 100%;
+		height: 100%;
+	}
 
-.firstRow {
-	justify-content: space-around;
+	.thirdButtonRow {
+		width: 100%;
+		height: 100%;
+	}
 
-	width: 100%;
-	height: 30vh;
-}
+	.firstRow {
+		justify-content: space-around;
 
-.secondRow {
-	justify-content: space-around;
+		width: 100%;
+		height: 30vh;
+	}
 
-	width: 100%;
-	height: 30vh;
-}
+	.secondRow {
+		justify-content: space-around;
 
-.thirdRow {
-	justify-content: space-around;
+		width: 100%;
+		height: 30vh;
+	}
 
-	width: 100%;
-	height: 30vh;
-}
+	.thirdRow {
+		justify-content: space-around;
 
-.no-padding {
-	padding: 0px !important;
+		width: 100%;
+		height: 30vh;
+	}
+
+	.no-padding {
+		padding: 0px !important;
+	}
 }

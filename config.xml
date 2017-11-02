@@ -3,7 +3,7 @@
     <name>MyApp</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.42.74:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -98,6 +98,12 @@
     <allow-navigation href="http://192.168.42.226:8100" />
     <allow-navigation href="http://192.168.42.117:8100" />
     <allow-navigation href="http://192.168.42.144:8100" />
+    <allow-navigation href="http://192.168.42.8:8100" />
+    <allow-navigation href="http://192.168.42.148:8100" />
+    <allow-navigation href="http://192.168.42.251:8100" />
+    <allow-navigation href="http://192.168.42.189:8100" />
+    <allow-navigation href="http://192.168.42.80:8100" />
+    <allow-navigation href="http://192.168.42.74:8100" />
     <engine name="android" spec="6.3.0" />
     <plugin name="phonegap-nfc" spec="^0.7.1" />
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />

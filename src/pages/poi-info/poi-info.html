@@ -1,6 +1,15 @@
-<!--
-  Generated template for the PoiInfoPage page.
+<ion-header>
+	<ion-navbar>
+		<ion-title>poiInfo</ion-title>
+	</ion-navbar>
+</ion-header>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
+<ion-content>
+	<div class="container">
+		<img [src]="placeArray">
+	</div>
+	<h1>{{title}}</h1>
+	<p>
+		{{textPlace}}
+	</p>
+</ion-content>

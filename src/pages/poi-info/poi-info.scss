@@ -1,12 +1,31 @@
 page-poi-info {
-	#photo {
-		width: 100%;
-		height: auto;
+	width: 100%;
+	margin: 0;
+
+	.container {
+		position: relative;
+
+		overflow: hidden;
+
+		max-height: 200px;
 
 		img {
-			min-width: 100%;
-			height: auto;
+			display: block;
+
+			width: 100%;
 		}
+	}
+
+	h1 {
+		padding: 0 20px;
+	}
+
+	p {
+		display: block;
+
+		padding: 20px;
+
+		text-align: justify;
 	}
 }
 

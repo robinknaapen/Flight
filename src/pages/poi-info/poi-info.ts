@@ -12,37 +12,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
 	selector: 'page-poi-info',
 	templateUrl: 'poi-info.html',
-	template:`
-  <ion-header>
-	<ion-navbar>
-	  <ion-title>poiInfo</ion-title>
-	</ion-navbar>
-  </ion-header>
-
-
-  <ion-content padding>
-	<div id="container">
-	  <div id="photo">
-		<img [src]="placeArray" width="100%" height="100%">
-	  </div>
-	  <div id="txt">
-		<p>{{textPlace}}
-		</p>
-	  </div>
-	</div>
-  </ion-content>`
 })
 export class PoiInfoPage {
 
 	placeArray;
+	title;
 	textPlace;
 	firstParam;
 
 	constructor(public navCtrl: NavController, public navParams: NavParams) {
 		this.firstParam = navParams.get("firstPassed");
-		console.log(this.firstParam);
 		switch(this.firstParam){
 			case 1:
+				this.title = "Golden gate bridge";
 				this.placeArray = "img/golden-gate-bridge.jpg";
 				this.textPlace = `De Golden Gate Bridge is een hangbrug over de zeestraat Golden Gate, de opening van de Baai van San Francisco in de Stille Oceaan. De brug maakt deel uit van zowel U.S. Route 101 als de California State Route 1 en verbindt het Schiereiland van San Francisco met Marin County ten noorden van de metropool San Francisco. De Golden Gate Bridge is een van de meest herkenbare symbolen van San Francisco en de staat Californië. De American Society of Civil Engineers verklaarde de brug een van de zeven moderne wereldwonderen.
 		De brug werd ontworpen door de Amerikaanse ingenieur Joseph B. Strauss. De bouw werd in ongeveer vier jaar voltooid en heeft zo'n 35 miljoen dollar gekost. De Golden Gate Bridge opende feestelijk op 27 mei 1937.`
