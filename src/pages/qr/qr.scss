@@ -1,0 +1,27 @@
+qr-scan {
+	.clickToScan {
+		position: absolute;
+		top: calc(50% - 100px);
+		left: calc(50% - 50px);
+
+		width: 100px;
+		height: 100px;
+
+		background-image: url(/assets/imgs/QR-phone.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		&:after {
+			font-size: 1.2em;
+			font-weight: bold;
+
+			position: absolute;
+			top: calc(100% + 20px);
+			left: 50%;
+
+			content: "Touch to scan boardingpass";
+			transform: translateX(-50%);
+			white-space: nowrap;
+		}
+	}
+}
